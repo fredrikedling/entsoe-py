@@ -103,7 +103,7 @@ class EntsoeRawClient:
 
         logging.debug(f'Performing request to {URL} with params {params}')
         response = self.session.get(url=URL, params=params,
-                                    proxies=self.proxies)
+                                    proxies=self.proxies, timeout=1)
         try:
             response.raise_for_status()
         except requests.HTTPError as e:
