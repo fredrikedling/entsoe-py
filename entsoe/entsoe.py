@@ -15,7 +15,7 @@ from .parsers import parse_prices, parse_loads, parse_generation, \
     parse_generation_per_plant, parse_installed_capacity_per_plant, \
     parse_crossborder_flows, parse_imbalance_prices, parse_unavailabilities, \
     parse_contracted_reserve
-from entsoe.exceptions import InvalidPSRTypeError, InvalidBusinessParameterError
+from .exceptions import InvalidPSRTypeError, InvalidBusinessParameterError
 
 __title__ = "entsoe-py"
 __version__ = "0.2.14"
